@@ -14,7 +14,7 @@ class Series
     raise ArgumentError unless (@numbers.length >= num)
     i = 0
     result = []
-    while i < @numbers.length - num + 1 do 
+    while i <= @numbers.length - num do 
       new_string = ''
       j = 0
       while j < num do
