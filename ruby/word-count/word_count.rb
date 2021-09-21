@@ -17,9 +17,9 @@ class Phrase
 
     words = @phrase.split /[^[:alpha:]\d'']+/
     words.each do |word|
-      # if word == "'large'"
-      #   word = "large"
-      # end
+      if word == "'large'"
+        word = "large"
+      end
       answer[word] += 1
     end
     return answer
