@@ -54,7 +54,6 @@ class Scrabble
   return ans
   end
 
-
   def self.score(word)
     Scrabble.new(word).score
   end
